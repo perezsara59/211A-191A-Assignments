@@ -1,0 +1,53 @@
+body{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 
+    grid-template-areas: "head head"
+    "nav  main"
+    "nav  main"
+    "foot foot"
+    #page {
+        display: grid;
+        width: 80%;
+        height: 80%;
+        grid-template-areas: 
+        "a a a a"
+        "b b c c"
+        "b b c c"
+        "d d d d";
+        grid-template-rows: .25fr .25fr .25fr .25fr;
+        grid-template-columns: .25fr .25fr .25fr .25fr;
+      }
+      
+      #page > header {
+        grid-area: head;
+        background-color: #97a6ee;
+      }
+      
+      #page > nav {
+        grid-area: nav ;
+        font-size: smaller;
+        background-color: #ffa08c;
+      }
+      
+      #page > main {
+        grid-area: main;
+        background-color: #ffff64;
+      }
+      
+      #page > footer {
+        grid-area: foot;
+        background-color: #8cffa0;
+      }
+      
+      
+    
+}
+
+#mapArea{
+    height:90vh;
+    grid-area: mappanel;
+} 
+
+#survey{
+    grid-area: sidepanel;
+} 
